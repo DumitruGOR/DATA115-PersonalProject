@@ -28,3 +28,7 @@ In this project, my goal was to see if teams that have been longer in the FCS le
 Winning Percentage/Total Games = 0.2923842
 Years/Total Games = 0.3194701
 
+## Descriptions of Code and Materials
+
+The raw data downloaded from the sources described above are uploaded in .csv form as Project Data.csv. The processed data with better column names are uploaded as Processed_Project_Data.csv and R-Studio Work is uploaded as Personal_Project_R.csv
+
