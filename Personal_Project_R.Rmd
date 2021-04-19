@@ -1,0 +1,58 @@
+---
+title: "Personal Project"
+author: "Dumitru"
+date: "4/7/2021"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library('tidyverse')
+library('ggplot2')
+setwd("~/Desktop/University/SP '21/DATA 115")
+FCS <- read.csv('FCS2020.csv')
+```
+
+```{r FCS_Data}
+head(FCS)
+summary(FCS)
+```
+
+```{r FCS_Plot1}
+ggplot(FCS, aes(x=Pct.,y=Total.Games,color = as.factor(FCS$Conference))) +
+  geom_point() 
+
+
+ggplot(FCS, aes(x=Pct.,y=Total.Games,color = as.factor(FCS$Conference))) +
+  geom_point() +
+  geom_text(aes(x=FCS$Pct.[1],y=FCS$Total.Game[1],label=FCS$Team[1]),color="black") +
+  geom_text(aes(x=FCS$Pct.[55],y=FCS$Total.Game[55],label=FCS$Team[55]),color="black") +
+  geom_text(aes(x=FCS$Pct.[124],y=FCS$Total.Game[124],label=FCS$Team[124]),color="black")+
+  geom_text(aes(x=FCS$Pct.[125],y=FCS$Total.Game[125],label=FCS$Team[125]),color="black") +
+  geom_text(aes(x=FCS$Pct.[126],y=FCS$Total.Game[126],label=FCS$Team[126]),color="black") +
+  geom_text(aes(x=FCS$Pct.[127],y=FCS$Total.Game[127],label=FCS$Team[127]),color="black")
+
+
+cor(FCS$Pct.,FCS$Total.Games)
+
+
+ggplot(FCS, aes(x=Pct.,y=Years,color = as.factor(FCS$Conference))) +
+  geom_point()
+  
+
+ggplot(FCS, aes(x=Pct.,y=Years,color = as.factor(FCS$Conference))) +
+  geom_point() +
+  geom_text(aes(x=FCS$Pct.[1],y=FCS$Years[1],label=FCS$Team[1]),color="black") +
+  geom_text(aes(x=FCS$Pct.[55],y=FCS$Years[55],label=FCS$Team[55]),color="black") +
+  geom_text(aes(x=FCS$Pct.[124],y=FCS$Years[124],label=FCS$Team[124]),color="black")+
+  geom_text(aes(x=FCS$Pct.[125],y=FCS$Years[125],label=FCS$Team[125]),color="black") +
+  geom_text(aes(x=FCS$Pct.[126],y=FCS$Years[126],label=FCS$Team[126]),color="black") +
+  geom_text(aes(x=FCS$Pct.[127],y=FCS$Years[127],label=FCS$Team[127]),color="black")
+
+cor(FCS$Pct.,FCS$Years)
+```
+
+
+
+
+```
