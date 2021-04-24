@@ -25,8 +25,8 @@ In this visualization, I have compared the Winning Percentage to the number of T
 
 In this project, my goal was to see if teams that have been longer in the FCS league had any advantages against newcomers. To answer this question I compared the Winning Percentages (Pct.) to Years and Total.Games. Looking at the plots I can't see any noticeable correlation, they look similar and are kind of in the circle. Looking at the correlations, I can see that there is a moderate correlation of about 0.3o in both cases. I can for sure say that teams with an extensive history in the FCS league don't have any advantage over newcomers
 ##### Correlations 
-Winning Percentage/Total Games = 0.2923842
-Years/Total Games = 0.3194701
+Winning Percentage/Years = 0.2923842
+Winning Percentage/Total Games = 0.3194701
 
 ## Descriptions of Code and Materials
 
